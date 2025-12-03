@@ -1,36 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <title>JSGF Week 3 Demonstration</title>
-    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
-    <script type="text/javascript" src="JS/main.js"></script>
+<title>Bootstrap</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <h1 style="color:blue; margin-left: 0px;">JavaScript Games: Programming Fundamentals</h1>
-    <h1>Header 1</h1>
-    <h2>Header 2</h2>
-    <h3>Header 3</h3>
-
-    <p>This is some text</p>
-
-    <img src="assets/image.png" alt="sample" style="width: 200px; height: 200px;">
-
-    <a href="https://www.google.co.uk">Take me to Google!</a>
-    <a href="game.html">Game Page</a>
-
-    <button onclick=myFunction()>Google Button</button>
-
-    <ul style="list-style-type: circle;">
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ul>
-
-    <ol type="1">
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ol>
+<div class = "container-fluid py-5 text-start text-sm-center">
+ 
+<h1 class="fw-bold display-5">My first bootstrap page</h1>
+<p class="fs-4 col-md-16">These are some of the game I like and some babylon I made.</p>
+ 
+ 
+</div>
+<nav class="navbar navbar-expand-xl bg-dark border-bottom border-body" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="./assets/icon.png" alt="logo" width = "75"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Design</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Play game</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+ 
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Games
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">God Of War Ragnorok </a></li>
+            <li><a class="dropdown-item" href="#">Tom Clancys Rainbow Six Siege</a></li>
+            <li><a class="dropdown-item" href="#">Dispatch</a></li>
+          </ul>
+        </li>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class = "container-fluid mt-3">
+    <div class = "row">        <div class ="col-sm-4">  
+            <h3 style = "text-align: center;">Dispatch</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+             <p> Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+        </div>
+        <div class ="col-sm-4">  
+         <h3 style = "text-align: center;">God Of War Ragnorok</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+             <p> Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+        </div>
+        <div class ="col-sm-4">  
+            <h3 style = "text-align: center;">Rainbow Six Siege</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+             <p> Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+        </div>
+    </div>
+</div>
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./assets/gowragnorok.jpg" class="d-block w-100" alt="godofwarragnorok">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="background-color: black;">God of War Ragnorok</h5>
+        <p style="background-color: black;">A game by Santa Monica Studio</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/rainbowsix.jpg" class="d-block w-100" alt="rainbowsix">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="background-color: black;">Rainbow Six Siege</h5>
+        <p style="background-color: black;">A game by Ubisoft</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/dispatch.jpg" class="d-block w-100" alt="dispatch">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="background-color: black;">Dispatch</h5>
+        <p style="background-color: black;">A game by Adhoc Studios</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+ 
+ 
+ 
+<div class="card" style="width: 18rem;">
+  <img src="./assets/icon.jpg" class="card-img-top" alt="icon">
+  <div class="card-body">
+    <h5 class="card-title">Aiden McGarry</h5>
+    <p class="card-text">Game development student that is currently studying at UWS</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+ 
+ 
+ 
+ 
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        1. What is HTML?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div class="card-body">
+        <p>HTML stands for Hyper Text Markup Language, its the standard markup language for creating web pages <a href ="https://www.w3schools.com/html/html_intro.asp" target ="blank">learn more</a> </p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        2. What is a bootstrap?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+       <div class="card-body">
+        <p>Bootstrap is a free front-end framework for faster and easier web development. Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many other, as well as optional JavaScript plugins. <a href ="https://www.w3schools.com/whatis/whatis_bootstrap.asp" target ="blank">learn more</a> </p>
+     
+      </div>
+    </div>
+  </div>
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        3. What is CSS
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+       <div class="card-body">
+        <p>CSS stands for Cascading Style Sheets and is used to describe how HTML elements are to be displayed on screen, paper or in other media, CSS saves a lot of work. It can control the layout of multiple web pages all at once. <a href ="https://www.w3schools.com/css/css_intro.asp" target ="blank">learn more</a> </p>
+     
+      </div>
+    </div>
+  </div>
+</div>
 </body>
-</html>
